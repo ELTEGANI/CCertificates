@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav"
+    app:startDestination="@id/certificatesFragment">
+    <fragment
+        android:id="@+id/certificatesFragment"
+        android:name="com.expensemoitor.c_certificates.certificates.CertificatesFragment"
+        android:label="CertificatesFragment" >
+        <action
+            android:id="@+id/action_certificatesFragment_to_certificatesDetailesFragment"
+            app:destination="@id/certificatesDetailesFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/certificatesDetailesFragment"
+        android:name="com.expensemoitor.c_certificates.certificatesDetailes.CertificatesDetailesFragment"
+        android:label="certificates_detailes_fragment"
+        tools:layout="@layout/certificates_detailes_fragment" >
+        <action
+            android:id="@+id/action_certificatesDetailesFragment_to_certificatesFragment"
+            app:destination="@id/certificatesFragment" />
+    </fragment>
+</navigation>
