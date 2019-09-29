@@ -15,7 +15,7 @@
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/cardView"
             android:layout_width="match_parent"
-            android:layout_height="170dp"
+            android:layout_height="140dp"
             android:layout_marginStart="8dp"
             android:layout_marginTop="10dp"
             android:layout_marginEnd="8dp"
@@ -30,7 +30,8 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.81">
+            app:layout_constraintVertical_bias="0.81"
+            android:focusable="true">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -39,25 +40,25 @@
 
                 <ImageView
                     android:id="@+id/imageView"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
                     android:layout_marginStart="16dp"
                     android:layout_marginTop="16dp"
+                    app:imageUrl="@{certificatesResponse.certifacteImage}"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.0"
-                    tools:srcCompat="@tools:sample/avatars" />
+                    app:layout_constraintVertical_bias="0.0" />
 
                 <TextView
                     android:id="@+id/textView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="40dp"
+                    android:layout_marginTop="16dp"
                     android:textSize="21sp"
                     app:certifacteName="@{certificatesResponse}"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.402"
+                    app:layout_constraintHorizontal_bias="0.556"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,10 +69,10 @@
                     app:certifacteDate="@{certificatesResponse}"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.402"
+                    app:layout_constraintHorizontal_bias="0.47"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.503" />
+                    app:layout_constraintVertical_bias="0.561" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </com.google.android.material.card.MaterialCardView>

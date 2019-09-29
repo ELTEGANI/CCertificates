@@ -8,3 +8,6 @@ data class CertificatesResponse(
     val certifacteDate: String,
     val certifacteName:String
 )
+
+
+

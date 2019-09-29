@@ -15,7 +15,7 @@
     tools:context=".certificates.CertificatesFragment">
 
 
-            <androidx.recyclerview.widget.RecyclerView
+     <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/certificates_list"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
